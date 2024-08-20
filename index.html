@@ -10,12 +10,9 @@
       crossorigin="anonymous"
     ></script>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- -------Tailwind Cdn------- -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -26,12 +23,16 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily:{
+              'manrope': ['Manrope', 'sans-serif'],
+            },
           },
         },
       };
     </script>
+    
   </head>
-  <body class="manrope-font">
+  <body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-5 lg:px-28 ">
       <header class="mt-8 mb-14 md:flex">
         <div>
@@ -153,7 +154,7 @@
       <!-- ---------Meet section--------- -->
       <section>
         <div
-          class="bg-gradient-to-r from-orange-400 to-red-500 mt-14 rounded-md grid md:grid-cols-2 p-4 md:p-6 items-center"
+          class="bg-gradient-to-r from-orange-400 to-red-500 mt-14 rounded-md grid md:grid-cols-2 p-4 md:p-6 items-center overflow-hidden"
         >
           <div class="w-5/6">
             <h1 class="text-4xl font-bold text-white mb-3">
@@ -171,7 +172,7 @@
               Show All
             </button>
           </div>
-          <div class="flex flex-col gap-5 relative justify-center hidden md:block">
+          <div class="flex flex-col gap-5 relative justify-center ">
 
             <!-- middle card  -->
             <div class="w-[320px] h-44 bg-white absolute p-3 flex flex-col justify-end z-10  rounded">
@@ -235,10 +236,79 @@
 
     </main>
 
-    <style>
-      .manrope-font {
-        font-family: "Manrope", sans-serif;
-      }
-    </style>
+    <footer class="bg-pink-200 pt-16">
+      <div class="max-w-screen-lg mx-auto ">
+        <div class="flex justify-between items-center pb-8">
+          <div>
+            <img src="./images/cup.png" alt="">
+          </div>
+          <div class="flex gap-3 items-center">
+            <p>Ready to get started?</p>
+            <button class="text-white bg-red-500 px-4 py-2 rounded-md mt-2 hover:bg-red-600 transition ease-in delay-100">Get Started</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-around ">
+          <ul class="space-y-3">
+            <h1 class="font-bold text-3xl">About Us</h1>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+          </ul>
+          <ul class="space-y-3">
+            <h1 class="font-bold text-3xl">About Us</h1>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+          </ul>
+          <ul class="space-y-3">
+            <h1 class="font-bold text-3xl">About Us</h1>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+            <li class="">
+              <a href="" class="hover:text-orange-700">Home</a>
+            </li>
+          </ul>
+
+          <div class="">
+            <h1 class="font-bold text-3xl">About Us</h1>
+            <h3 class="text-lg">Subscribe to our newsletter</h3>
+            <input type="text" placeholder="Email Address" class="bg-transparent border-b-2 border-black focus:outline-none focus:border-b-sky-500 mb-5">
+            <div class="flex gap-3">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    
   </body>
 </html>
